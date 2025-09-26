@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Phishing</title>
+<style>
+  :root {
+    --accent-color: #ffff00; /* Bright yellow for the container background */
+    --border-color: #ff00ff; /* Magenta border color */
+    --header-color: #ffff00; /* Bright yellow for header background */
+    --body-background: #ff00ff; /* Magenta background for the entire page */
+    --text-color: #111;
+    --white: #fff;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--body-background); /* Entire page magenta background */
+    padding: 20px;
+  }
+
+  /* Header style */
+  .header {
+    background: var(--header-color); /* Bright yellow header */
+    color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  /* Back button style */
+  .back-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+    text-align: center;
+  }
+  .back-btn:hover {
+    background-color: #333;
+  }
+
+  /* Container for content & image */
+  .container {
+    background: var(--accent-color); /* Bright yellow container background */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 10px solid var(--border-color); /* Thick magenta border */
+  }
+
+  /* Text/content box */
+  .text-box {
+    width: 55%;
+    color: #111;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /* Image box */
+  .image-box {
+    width: 40%;
+    text-align: center;
+  }
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+    .text-box, .image-box {
+      width: 100%;
+    }
+    .text-box {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">Phishing</div>
+
+<!-- Back Button -->
+<div style="text-align: center;">
+  <a class="back-btn" href="index.html">← Back to Home</a>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <!-- Text Content -->
+  <div class="text-box">
+    <p>
+     An attempt to trick a userf into providing personal information like your usernames and passwords, account numbers or social security numbers
+
+Phishing emails often look like they’re from a company you know and trust
+Your bank
+Your credit card company
+Social networking site
+Video streaming service
+Online store
+They trick you into clicking a link or opening an attachment 
+
+     ________________________________________________________
+    </p>
+  </div>
+  <!-- Image or visual -->
+  <div class="image-box">
+    <img src="image/phising.png" alt="Diagram of Triangle" style="width: 700px; height: auto;" />
+  </div>
+</div>
+
+</body>
+</html>

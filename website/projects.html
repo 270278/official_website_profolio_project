@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects</title>
+<style>
+  body {
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background: #3b5998; /* blue background */
+    color:#fff;
+  }
+  /* Style for the Back to Home button */
+  .back-button-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .back-button {
+    display:inline-block;
+    background-color:#000;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
+  }
+  .back-button:hover {
+    background-color:#222;
+  }
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  /* Style for project boxes with background images and overlay text */
+  .project-box {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  /* Overlay text styling */
+  .overlay-text {
+    background-color: rgba(0,0,0,0.5);
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+  }
+  /* Responsive for small screens */
+  @media(max-width: 600px) {
+    .project-box {
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* Style for the Photo Editing section with smaller, centered box */
+  .photo-edit-section {
+    margin-top: 40px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photo-edit-background {
+    width: 100%;
+    height: 200px; /* smaller height */
+    background-image: url('https://via.placeholder.com/400x200?text=Photo+Editing'); /* placeholder image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+  }
+  /* Overlay text centered over background image */
+  .photo-edit-overlay {
+    background-color: rgba(0,0,0,0.5);
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Back to Home Button -->
+<div class="back-button-container">
+  <a href="index.html" class="back-button">&larr; Back to Home</a>
+</div>
+
+<div class="container">
+  <h1>My Projects</h1>
+  <div class="grid">
+    <!-- Project Box 1: Minecraft Education -->
+    <a href="minecraft.html" class="project-box" style="background-image: url('image/minecraftedu-image.png');">
+      <div class="overlay-text">Minecraft Education</div>
+    </a>
+    <!-- Project Box 2: Python -->
+    <a href="python.html" class="project-box" style="background-image: url('image/pythonimage.png');">
+      <div class="overlay-text">Python</div>
+    </a>
+    <!-- Project Box 3: HTML -->
+    <a href="category-html.html" class="project-box" style="background-image: url('image/html-image.png');">
+      <div class="overlay-text">HTML</div>
+    </a>
+    <!-- Project Box 4: JavaScript -->
+    <a href="category-apcsp.html" class="project-box" style="background-image: url('image/apcsp.png');">
+      <div class="overlay-text">AP CSP</div>
+    </a>
+  </div>
+
+  <!-- Smaller, centered Photo Editing Box -->
+  <a href="category-photoedit.html" class="photo-edit-background" style="background-image: url('image/photosh.png');">
+    <div class="photo-edit-overlay">Photo Editing</div>
+  </a>
+</div>
+
+</body>
+</html>

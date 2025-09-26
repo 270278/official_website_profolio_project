@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resturant Project</title>
+  <style>
+    :root {
+      --orange-bg: #ffeb3b;
+      --blue-border: #4285f4;
+      --black: #111;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--blue-border);
+      padding: 20px;
+    }
+
+    /* Header style */
+    .header {
+      background: var(--orange-bg);
+      color: var(--black);
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+      font-weight: 900;
+      border-radius: 8px;
+    }
+
+    /* Back button style */
+    .back-btn {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: var(--black);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.2s ease;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background-color: #333;
+    }
+
+    /* Container for content & image */
+    .container {
+      background: var(--orange-bg);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 1100px;
+      margin: 20px auto;
+    }
+
+    /* Text/content box */
+    .text-box {
+      width: 55%;
+      color: black;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* Image box */
+    .image-box {
+      width: 40%;
+      text-align: center;
+    }
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .text-box, .image-box {
+        width: 100%;
+      }
+      .text-box {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">Resturant Project</div>
+
+  <!-- Back Button -->
+  <div style="text-align: center;">
+    <a class="back-btn" href="index.html">← Back to Home</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Text Content -->
+    <div class="text-box">
+      <p>
+    
+        Retrieving all the orders placed by the user previously in the program, we calculate the total. This is how. Create placeOrder function. Parameter: dbname
+Description: This function will allow the user to place their order.
+Display all the items in the order in a readable format, including the name, quantity, price, and order time.
+Add them together to print a subtotal.
+Ask the user if they have a coupon.
+Ask the user if the coupon is a % off or a specific amount off.
+Subtract the appropriate amount.
+Ask the user if they’d like to tip 15%, 18% or 20%.
+Add New Jersey sales tax of 6.625%.
+Ask the user if they’d like pickup or delivery.
+If the user chooses delivery, add $5 to their order.
+Print the total of the order.
+Because of space, the user ordering the items individually screenshots are not included. 
+
+        ________________________________________________________
+      </p>
+    </div>
+    <!-- Image or visual (fixed to be wider) -->
+    <div class="image-box">
+      <img src="image/resturant1.png" alt="Diagram of Triangle" style="width: 700px; height: auto;" />
+      <img src="image/resturant2.png" alt="Diagram of Triangle" style="width: 700px; height: auto;" />
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Abstraction</title>
+<style>
+  :root {
+    --orange-bg: #ffeb3b; /* keeping your original accent color */
+    --blue-border: #4285f4; /* original blue, unused here */
+    --black: #111;
+    --white: #fff;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #00ff00; /* Bright green background for the page */
+    padding: 20px;
+  }
+
+  /* Header style */
+  .header {
+    background: #4285f4; /* Bright blue header */
+    color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    border-radius: 8px;
+  }
+
+  /* Back button style */
+  .back-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+    text-align: center;
+  }
+  .back-btn:hover {
+    background-color: #333;
+  }
+
+  /* Container for content & image */
+  .container {
+    background: #4285f4; /* Bright blue container matching header */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 1100px;
+    margin: 20px auto;
+  }
+
+  /* Text/content box */
+  .text-box {
+    width: 55%;
+    color: #111;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /* Image box */
+  .image-box {
+    width: 40%;
+    text-align: center;
+  }
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+    .text-box, .image-box {
+      width: 100%;
+    }
+    .text-box {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">Abstraction</div>
+
+<!-- Back Button -->
+<div style="text-align: center;">
+  <a class="back-btn" href="index.html">← Back to Home</a>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <!-- Text Content -->
+  <div class="text-box">
+    <p>
+Most humans see and use objects
+Computers, cars, smartphones, televisions, etc.
+All objects have properties such as size, shape, color, etc.
+Objects can be used for different things.
+Abstraction is an approach used in object-oriented programming languages such as C++ and Java
+In this process, most data is hidden from view in order to make the object easier and more efficient to use
+E.g., Smartphones, Tablets, etc.
+
+
+        ________________________________________________________
+      </p>
+    </div>
+    <!-- Image or visual (fixed to be wider) -->
+    <div class="image-box">
+      <img src="abstraction.png" alt="Diagram of Triangle" style="width: 700px; height: auto;" />
+</div>
+
+</body>
+</html>

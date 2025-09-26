@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project Detail</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Back Button Style */
+  .back-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .back-button:hover {
+    background-color: #555;
+  }
+
+  /* Main content container */
+  .container {
+    max-width: 800px;
+    width: 90%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  /* Placeholder project content */
+  .project-content {
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- Back Button: Will be dynamically updated -->
+<a id="backBtn" class="back-button" href="#">Back</a>
+
+<div class="container">
+  <h1>Project Title</h1>
+  <div class="project-content">
+    <p>This is a detailed view of the project. Replace this with your actual project description, images, or content.</p>
+  </div>
+</div>
+
+<script>
+  // Function to get URL parameter
+  function getQueryParam(param) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(param);
+  }
+
+  // Read 'category' parameter
+  const category = getQueryParam('category');
+
+  // Reference to the back button
+  const backBtn = document.getElementById('backBtn');
+
+  // Update button text and link based on category
+  if (category) {
+    backBtn.textContent = 'Back to Categories';
+    backBtn.href = 'category-' + category + '.html';
+  } else {
+    backBtn.textContent = 'Back to Projects';
+    backBtn.href = 'projects.html';
+  }
+</script>
+
+</body>
+</html>

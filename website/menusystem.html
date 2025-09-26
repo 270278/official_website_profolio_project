@@ -1,0 +1,141 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu System</title>
+  <style>
+    :root {
+      --orange-bg: #ffeb3b;
+      --blue-border: #4285f4;
+      --black: #111;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--blue-border);
+      padding: 20px;
+    }
+
+    /* Header style */
+    .header {
+      background: var(--orange-bg);
+      color: var(--black);
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+      font-weight: 900;
+      border-radius: 8px;
+    }
+
+    /* Back button style */
+    .back-btn {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: var(--black);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.2s ease;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background-color: #333;
+    }
+
+    /* Container for content & image */
+    .container {
+      background: var(--orange-bg);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 1100px;
+      margin: 20px auto;
+    }
+
+    /* Text/content box */
+    .text-box {
+      width: 55%;
+      color: black;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* Image box */
+    .image-box {
+      width: 40%;
+      text-align: center;
+    }
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .text-box, .image-box {
+        width: 100%;
+      }
+      .text-box {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">Menu System</div>
+
+  <!-- Back Button -->
+  <div style="text-align: center;">
+    <a class="back-btn" href="index.html">← Back to Home</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Text Content -->
+    <div class="text-box">
+      <p>
+        import random
+
+For your convenience, this is included in your starter code.
+
+If you want a random integer within a range, you can use random.randint(a, b) where a is the smallest possible number and b is the largest.  For example:
+
+random_integer = random.randint(1, 10)  # This will give you a random integer between 1 and 10.
+
+Create a new menu item named P5 - Problem 5
+Create a new choice in the conditional menu system
+Create a random number.
+Using a while loop, ask the user for a number from 1 to 100.
+Continue asking the user for a number until they enter the correct number.
+If the guessed number is too low, print “too low!”
+If the guessed number is too high, print “too high!”
+Print the percentage of correct answers.
+Print the percentage of incorrect answers.
+
+        ________________________________________________________
+      </p>
+    </div>
+    <!-- Image or visual (fixed to be wider) -->
+    <div class="image-box">
+      <img src="menusystem.png" alt="Menu System" style="width: 700px; height: auto;" />
+    </div>
+  </div>
+
+</body>
+</html>

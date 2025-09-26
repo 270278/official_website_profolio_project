@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Double Exposure</title>
+<style>
+  :root {
+    --header-color: linear-gradient(to right, #ff0000, #cc0000); /* Bright red gradient for header */
+    --body-background: linear-gradient(to bottom, #ff0000, #990000); /* Red gradient background for page */
+    --border-color: #000; /* Black border */
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--body-background);
+    padding: 20px;
+  }
+
+  /* Header style */
+  .header {
+    background: var(--header-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  /* Back button style */
+  .back-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+    text-align: center;
+  }
+  .back-btn:hover {
+    background-color: #222;
+  }
+
+  /* Container for content & image */
+  .container {
+    background: #fff; /* White background for content box */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 10px solid var(--border-color);
+  }
+
+  /* Text/content box */
+  .text-box {
+    width: 55%;
+    color: #000;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /* Image box */
+  .image-box {
+    width: 40%;
+    text-align: center;
+  }
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+    .text-box, .image-box {
+      width: 100%;
+    }
+    .text-box {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">Double Exposure</div>
+
+<!-- Back Button -->
+<div style="text-align: center;">
+  <a class="back-btn" href="index.html">← Back to Home</a>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <!-- Text Content -->
+  <div class="text-box">
+    <p>
+      Using photoshop, I am able to create an image inside another. This creates a more artistic look and meaningful poster. 
+    </p>
+  </div>
+  <!-- Image or visual -->
+  <div class="image-box">
+    <img src="image/double-exposure.png" alt="Diagram of Triangle" style="width: 700px; height: auto;" />
+  </div>
+</div>
+
+</body>
+</html>

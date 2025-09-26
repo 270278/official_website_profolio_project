@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Category Details</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #ffff66; /* bright yellow background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Back button styling */
+  .back-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .back-button:hover {
+    background-color: #555;
+  }
+
+  /* Container with stepped top border */
+  .box {
+    max-width: 700px;
+    width: 90%;
+    background-color: #fff;
+    padding: 30px 20px 40px 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    /* Create the stepped effect using clip-path and border */
+    position: relative;
+    clip-path: polygon(
+      0 20px, 20px 0, calc(100% - 20px) 0, 100% 20px,
+      100% 100%, 0 100%
+    );
+  }
+
+  h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+  }
+
+  /* Style for project links */
+  .project-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .project-link {
+    display: block;
+    padding: 12px 20px;
+    background-color: #f9d71c;
+    color: #222;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .project-link:hover {
+    background-color: #e0c21f;
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+
+<!-- Back to Projects Page Button -->
+<a class="back-button" href="projects.html">&larr; Back to All Projects</a>
+
+<div class="box">
+  <h2>Minecraft Education</h2>
+  <div class="project-list">
+    <a href="moving.html" class="project-link">Minecraft Moving Company Activity</a>
+    <a href="polars.html" class="project-link">Spawn Polar Bears Randomly</a>
+    <a href="worksmith.html" class="project-link">Worksmith</a>
+    <a href="ages.html" class="project-link">Compare Ages and Modify Messages</a>
+    <a href="bro.html" class="project-link">Compare and Contrast</a>
+    <a href="forloop.html" class="project-link">For Loop</a>
+    <a href="functions.html" class="project-link">Functions</a>
+    <a href="burger.html" class="project-link">Build a Burger</a>
+  </div>
+</div>
+
+</body>
+</html>
