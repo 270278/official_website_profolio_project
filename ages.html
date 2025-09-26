@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Compare Ages Activity</title>
+<style>
+  :root {
+    --orange-bg: #ffeb3b; /* keeping your original accent color */
+    --blue-border: #4285f4; /* original blue, unused here */
+    --black: #111;
+    --white: #fff;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #00ff00; /* Bright green background for the page */
+    padding: 20px;
+  }
+
+  /* Header style */
+  .header {
+    background: #4285f4; /* Bright blue header */
+    color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    border-radius: 8px;
+  }
+
+  /* Back button style */
+  .back-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+    text-align: center;
+  }
+  .back-btn:hover {
+    background-color: #333;
+  }
+
+  /* Container for content & image */
+  .container {
+    background: #4285f4; /* Bright blue container matching header */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 1100px;
+    margin: 20px auto;
+  }
+
+  /* Text/content box */
+  .text-box {
+    width: 55%;
+    color: #111;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /* Image box */
+  .image-box {
+    width: 40%;
+    text-align: center;
+  }
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+    .text-box, .image-box {
+      width: 100%;
+    }
+    .text-box {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">Compare Ages Activity</div>
+
+<!-- Back Button -->
+<div style="text-align: center;">
+  <a class="back-btn" href="index.html">← Back to Home</a>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <!-- Text Content -->
+  <div class="text-box">
+    <p>
+      Ever built the perfect house in Minecraft but wished you had done it in a different location? You can use coordinates and some of the block operations in the BLOCKS Toolbox drawer to copy and paste entire portions of the Minecraft landscape. You can also copy hillsides, lakes, and entire buildings. Changing the cordinates in the coding section allows for you to run the code, and the building appears without you building.
+In this project, you will use three different on chat command commands:
+Created variables that represent their names and ages.  
+Using conditional statements and the variables you created, compared my age to the ages of five of your classmates.  Print a message that includes if the your classmate is older or younger than you
+
+
+        ________________________________________________________
+      </p>
+    </div>
+    <!-- Image or visual (fixed to be wider) -->
+    <div class="image-box">
+      <img src="image/compareages.png" alt="Diagram of Triangle" style="width: 700px; height: auto;" />
+      <img src="image/compareages2.png" alt="Diagram of Triangle" style="width: 700px; height: auto;" />
+    </div>
+</div>
+
+</body>
+</html>

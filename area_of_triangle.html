@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Area of a Triangle</title>
+  <style>
+    :root {
+      --orange-bg: #ffeb3b;
+      --blue-border: #4285f4;
+      --black: #111;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--blue-border);
+      padding: 20px;
+    }
+
+    /* Header style */
+    .header {
+      background: var(--orange-bg);
+      color: var(--black);
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+      font-weight: 900;
+      border-radius: 8px;
+    }
+
+    /* Back button style */
+    .back-btn {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: var(--black);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.2s ease;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background-color: #333;
+    }
+
+    /* Container for content & image */
+    .container {
+      background: var(--orange-bg);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 1100px;
+      margin: 20px auto;
+    }
+
+    /* Text/content box */
+    .text-box {
+      width: 55%;
+      color: black;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* Image box */
+    .image-box {
+      width: 40%;
+      text-align: center;
+    }
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .text-box, .image-box {
+        width: 100%;
+      }
+      .text-box {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">Area of a Triangle</div>
+
+  <!-- Back Button -->
+  <div style="text-align: center;">
+    <a class="back-btn" href="index.html">← Back to Home</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Text Content -->
+    <div class="text-box">
+      <p>
+        Ask the user if they would like to use Heron’s Formula to calculate the area of a Triangle.
+        If the user enters “Heron”
+        Ask the length of side a
+        Ask the length of side b
+        Ask the length of side c
+        Print the area based on Heron’s Formula
+        ________________________________________________________
+      </p>
+    </div>
+    <!-- Image or visual (fixed to be wider) -->
+    <div class="image-box">
+      <img src="image/areaoftriangle.png" alt="Diagram of Triangle" style="width: 700px; height: auto;" />
+    </div>
+  </div>
+
+</body>
+</html>
